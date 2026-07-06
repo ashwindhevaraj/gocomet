@@ -1,0 +1,3 @@
+locators\Loginpagelocators.class
+factory\DriverFactory.class
+pages\Loginpage.class
