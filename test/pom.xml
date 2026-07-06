@@ -3,6 +3,24 @@
   <groupId>gocomet</groupId>
   <artifactId>test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <profiles>
+  <profile>
+  <id>QA</id>
+  <properties>
+  <environmenturl>https://google.com</environmenturl>
+  <browser>chrome</browser>
+  </properties>
+  </profile>
+  
+  <profile>
+  <id>Dev</id>
+  <properties>
+  <environmenturl>https://gmail.com</environmenturl>
+  <browser>edge</browser>
+  </properties>
+  </profile>
+  
+  </profiles>
   <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <maven.compiler.source>1.8</maven.compiler.source>

@@ -3,6 +3,8 @@ package factory;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import com.microsoft.playwright.Browser;
@@ -68,6 +70,7 @@ public class DriverFactory {
 		tlpage.set(getBrowsercontext().newPage());
 		getPage().navigate(prop.getProperty("url").trim());
 		return getPage();
+		
 	}
 	public Properties init_prop() {
 		try {
