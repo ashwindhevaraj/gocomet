@@ -38,6 +38,11 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src\test\resources\testrunners\testng_regression.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <systemPropertyVariables>
+                    <allure.results.directory>
+                        target/allure-results
+                    </allure.results.directory>
+                </systemPropertyVariables>
 
           </configuration>
         </plugin>
@@ -70,6 +75,11 @@
     <artifactId>extentreports</artifactId>
     <version>${extendsreportversion}</version>
     <scope>compile</scope>
+</dependency>
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-testng</artifactId>
+    <version>2.29.1</version>
 </dependency>
   </dependencies>
 </project>
