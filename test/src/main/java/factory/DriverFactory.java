@@ -59,6 +59,9 @@ public class DriverFactory {
 			//browser=playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false));
 			tlbrowser.set(getPlaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false)));
 			break;
+		case "edge":
+			tlbrowser.set(getPlaywright().chromium().launch(new LaunchOptions().setChannel("msedge").setHeadless(false)));
+			break;
 			
 		default:
 			System.out.println("Please select browser from chromium,firefox,chrome,safari alone");

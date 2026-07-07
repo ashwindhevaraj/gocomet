@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="4" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="4" name="ChromeTest(failed)">
+<suite name="Failed suite [Gocomet interview validations]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="playwright learnings(failed)">
     <classes>
       <class name="testcases.LoginTest">
         <methods>
           <include name="teardown"/>
-          <include name="firsttest"/>
           <include name="setup"/>
-          <include name="validlogin"/>
           <include name="invalidlogin"/>
         </methods>
       </class> <!-- testcases.LoginTest -->
     </classes>
-  </test> <!-- ChromeTest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- playwright learnings(failed) -->
+</suite> <!-- Failed suite [Gocomet interview validations] -->

@@ -1,2 +1,3 @@
-basetest\BaseTest.class
 testcases\LoginTest.class
+basetest\BaseTest.class
+Utilities\Configreader.class
