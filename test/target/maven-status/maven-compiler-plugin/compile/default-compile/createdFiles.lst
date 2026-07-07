@@ -1,3 +1,5 @@
 locators\Loginpagelocators.class
+model\Herokuappcustomer.class
+utilities\JsonReader.class
 factory\DriverFactory.class
 pages\Loginpage.class
